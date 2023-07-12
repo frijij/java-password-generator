@@ -17,20 +17,35 @@ public class PasswordGenerator {
         String name;
         String surname;
         String favColor;
-        int dayOfBirth;
-        int monthOfBirth;
-        int yearOfBirth;
-        int sumDayMonthYear;
+        String dayOfBirth;
+        String monthOfBirth;
+        String yearOfBirth;
+        String sumDayMonthYear;
         String insecurePassword;
         char dash = '-';
 
-        // attribuisco i valori alle variabili
+        /*// attribuisco i valori alle variabili
         name = "Pinco";
         surname = "Pallo";
         favColor = "magenta";
         dayOfBirth = 12;
         monthOfBirth = 5;
-        yearOfBirth = 1994;
+        yearOfBirth = 1994;*/
+
+        //BONUS: uso la classe scanner per leggere i dati dell'utente da tastiera
+        System.out.print("Inserisci il tuo nome: ");
+        name = scanner.nextLine();
+        System.out.print("Inserisci il tuo cognome: ");
+        surname = scanner.nextLine();
+        System.out.print("Inserisci il tuo colore preferito: ");
+        favColor = scanner.nextLine();
+        System.out.print("Inserisci il tuo giorno di nascita: ");
+        dayOfBirth = scanner.nextLine();
+        System.out.print("Inserisci il tuo mese di nascita: ");
+        monthOfBirth = scanner.nextLine();
+        System.out.print("Inserisci il tuo anno di nascita: ");
+        yearOfBirth = scanner.nextLine();
+
 
         // calcolo la somma di giorno, mese e anno di nascita dell'utente
         sumDayMonthYear = dayOfBirth + monthOfBirth + yearOfBirth;
