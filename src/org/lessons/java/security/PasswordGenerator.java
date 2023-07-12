@@ -8,8 +8,6 @@ Il programma deve fare quanto segue:
 di un utente suddivisa in giorno, mese e anno (in numero)
 * generare (e stampare a video) una password concatenando nome, cognome, colore preferito
 e somma di giorno, mese e anno di nascita, separate dal carattere -
-* Esempio: ho un utente che si chiama Pinco Pallo, nato il 12/05/1994, il cui colore preferito
-è il magenta La sua password sarà Pinco-Pallo-magenta-2011
 */
 public class PasswordGenerator {
     public static void main(String[] args) {
@@ -34,6 +32,11 @@ public class PasswordGenerator {
         monthOfBirth = 5;
         yearOfBirth = 1994;
 
+        // calcolo la somma di giorno, mese e anno di nascita dell'utente
+        sumDayMonthYear = dayOfBirth + monthOfBirth + yearOfBirth;
 
+        // genero la password e la stampo in console
+        insecurePassword = name + dash + surname + dash + favColor + dash + sumDayMonthYear;
+        System.out.println(insecurePassword);
     }
 }
