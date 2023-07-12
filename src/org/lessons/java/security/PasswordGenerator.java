@@ -27,6 +27,5 @@ public class PasswordGenerator {
         char dash = '-';
 
 
-
     }
 }
