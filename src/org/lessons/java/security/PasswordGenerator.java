@@ -26,6 +26,14 @@ public class PasswordGenerator {
         String insecurePassword;
         char dash = '-';
 
+        // attribuisco i valori alle variabili
+        name = "Pinco";
+        surname = "Pallo";
+        favColor = "magenta";
+        dayOfBirth = 12;
+        monthOfBirth = 5;
+        yearOfBirth = 1994;
+
 
     }
 }
